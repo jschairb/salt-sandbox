@@ -303,17 +303,17 @@
 #
 # To use multiple backends list them in the order they are searched:
 #
-#fileserver_backend:
-#  - git
-#  - roots
+fileserver_backend:
+  - git
+  - roots
 
 # Git fileserver backend configuration
 # When using the git fileserver backend at least one git remote needs to be
 # defined. The user running the salt master will need read access to the repo.
 #
-#gitfs_remotes:
-#  - git://github.com/saltstack/salt-states.git
-#  - file:///var/git/saltmaster
+gitfs_remotes:
+  - https://github.com/saltstack-formulas/users-formula.git
+
 #
 # The repos will be searched in order to find the file requested by a client
 # and the first repo to have the file will return it.
