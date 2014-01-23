@@ -1,5 +1,6 @@
 base:
   '*':
+    - build-essential
     - essential
     - salt-minion
   'salt*':
